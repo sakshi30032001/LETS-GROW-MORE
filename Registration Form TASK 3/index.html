@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Registration Form
+        </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <h1 class="title">STUDENT REGISTRATION FORM</h1>
+
+    <body>
+        <table>
+            <tr>
+                <td>
+                    <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                        <div>
+                            <label>FULL NAME</label>
+                            <label class="validation-error hide" id="fullNameValidationError"></label>
+                            <input type="text" name="fullName" id="fullName" required>
+                        </div>
+                        <div>
+                            <label>ADDRESS</label>
+                            <input type="text" name="address" id="address" required>
+                        </div>
+                        <div>
+                            <label>PHONE NUMBER</label>
+                            <input type="text" name="phone" id="phone" required>
+                        </div>
+                        <div>
+                            <label>EMAIL</label>
+                            <input type="email" name="email" id="email" required>
+                        </div>
+                        <div>
+                            <label>DATE OF BIRTH</label>
+                            <input type="date" name="dateofbirth" id="dateofbirth" required>
+                        </div>
+
+                        <div>
+                            <label>HIGHEST QUALIFICATION</label>
+                            <input type="text" name="qualification" id="qualification" required>
+                        </div>
+            
+                        <div>
+                            <label>SKILLS</label>
+                            <input type="text" name="skills" id="skills">
+                        </div>
+    
+                        <div  class="form-action-buttons">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </td>
+                <td>
+                    <table class="list" id="employeeList">
+                        <thead>
+                            <h2>ENROLLED STUDENTS</h2>
+                            <tr>
+                                <th>FULL NAME</th>
+                                <th>ADDRESS</th>
+                                <th>PHONE NO.</th>
+                                <th>EMAIL</th>
+                                <th>DATE OF BIRTH</th>
+                                <th>QUALIFICATION</th>
+                                <th>SKILLS</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+    
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <script src="main.js"></script>
+    </body>
+    
+    </html>
+                
